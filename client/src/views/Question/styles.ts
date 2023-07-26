@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-export const QuestionCardWrapper = styled.div `
+export const QuestionWrapper = styled.div `
+	width: 400px;
 	padding: 30px 0;
 	color: #30A2FF;
-	width: 600px;
 
-	.subtitle {
+	.activityName {
 		text-transform: uppercase;
-		font-weight: 700;
 	}
 
 	.question {
@@ -21,17 +20,15 @@ export const QuestionCardWrapper = styled.div `
 	}
 `;
 
-export const QuestionCardHeader = styled.div `
+export const QuestionHeader = styled.div `
   display: flex;
   flex-direction: column;
-	color: #30A2FF;
-	padding: 30px;
+	padding: 12px 30px;
 `;
 
-export const ButtonWrapper = styled.div `
+export const Buttons = styled.div `
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	font-size: 12px;
 	font-weight: 700;
@@ -42,5 +39,9 @@ export const ButtonWrapper = styled.div `
 		border: none;
 		background: unset;
 		font-weight: 700;
+	}
+
+	button:hover {
+		color: #0082EC;
 	}
 `;

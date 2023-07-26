@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const ResultWrapper = styled.div `
-	color: #30A2FF;
-	width: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;
+	width: 400px;
 
-	h5 {
+	h4 {
 		text-transform: uppercase;
 	}
 
@@ -16,7 +14,6 @@ export const ResultWrapper = styled.div `
 		padding: 18px 24px;
 	}
 `;
-
 
 export const UserAnswers = styled.div `
 	display: flex;
