@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
 
   .msg {
     padding: 24px;
+    text-align: center;
   }
 `;
 

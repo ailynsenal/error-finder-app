@@ -31,7 +31,7 @@ const Home: FC = () => {
           <h4 className='title'>CAE</h4>
         )
       }
-      {isLoading &&
+      {isLoading && !isError &&
         (
           <LoadingWrapper>
             <ClipLoader color={'#30A2FF'} />
@@ -44,7 +44,7 @@ const Home: FC = () => {
           <div className='msg'>No Activities to display.</div>
         )
       }
-      {isError &&
+      {!isLoading && isError &&
         (
           <div className='msg'>Failed to load activities!</div>
         )

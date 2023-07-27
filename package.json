@@ -10,8 +10,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react-spinners": "^0.13.8"
-  }
+  "license": "ISC"
 }

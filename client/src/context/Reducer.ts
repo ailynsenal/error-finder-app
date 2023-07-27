@@ -25,6 +25,7 @@ const AppReducer: Reducer<TInitialState, TAppReducerAction> = (state = initialSt
       return {
         ...state,
         isError: action.payload,
+        isLoading: false,
       }
     default:
       return state;
