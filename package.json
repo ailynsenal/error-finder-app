@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:client": "cd client && npm run start",
-    "build:server": "cd server && npm run server",
-    "build:app": "concurrently \"npm run build:client\" \"npm run build:server\""
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run server",
+    "start:app": "concurrently \"npm run start:client\" \"npm run start:server\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "react-scripts": "^5.0.1"
+  }
 }
