@@ -3,7 +3,10 @@ import axios from 'axios';
 import AppReducer from './Reducer';
 import { IInitialContext, TAnswer, TInitialState } from './types';
 
-const domainUrl = "http://localhost:3001";
+const domainUrl = 
+  process.env.NODE_ENV === 'development' ?
+  'http://localhost:3001' : 
+  'https://api-cae-error-finder.netlify.app/.netlify/functions/api';
 
 export const initialState: TInitialState = {
   isLoading: true,

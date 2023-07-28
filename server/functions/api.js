@@ -17,11 +17,21 @@ router.get('/', (req, res) => {
   res.send('App is running..');
 });
 
-router.get('/activities', (request, response) => {
-	router.get(`${baseURL}/interview.mock.data/payload.json`, (req, res) => {
-		response.send(res.data);
-	})
+router.get('/activities', async (request, response) => {
+	try {
+		const url = `${baseURL}/interview.mock.data/payload.json`;
+
+		const resp = await fetch(url, {
+			method: 'GET',
+			headers: { 'Content-Type': 'application/json' }
+		}).then(res => res.json());
+
+		return response.send(resp);
+	}
+	catch (err) {
+		response.status(500).send('Server Error')
+	}
 });
 
-app.use('/api', router);
+app.use('/.netlify/functions/api', router);
 export const handler = serverless(app);
