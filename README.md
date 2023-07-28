@@ -34,7 +34,9 @@ This game teaches you to find mistakes in written text.
 
 ## How to setup
 `git clone` `https://github.com/ailynsenal/error-finder-app.git`
+
 `npm install` to the root folder to install needed dependencies
+
 `npm start`
 
 Runs the app in the development mode.
