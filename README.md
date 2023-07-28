@@ -2,6 +2,8 @@
 
 This game teaches you to find mistakes in written text.
 
+**Working site:** https://cae-error-finder.netlify.app/
+
 ## Description
 - The game will be able to help users practice their grammar skills by identifying the written mistakes in highlighted text.
 
