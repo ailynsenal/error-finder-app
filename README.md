@@ -37,7 +37,7 @@ This game teaches you to find mistakes in written text.
 
 `npm install` to the root folder to install needed dependencies
 
-`npm start`
+`npm run start:app` in the root folder
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
